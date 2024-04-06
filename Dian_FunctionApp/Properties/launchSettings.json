@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Dian_FunctionApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7169",
+      "launchBrowser": false
+    }
+  }
+}

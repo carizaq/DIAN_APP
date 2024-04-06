@@ -1,0 +1,17 @@
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian01.Data.deps.json
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian01.Data.runtimeconfig.json
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian01.Data.dll
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian01.Data.pdb
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian02.Entities.dll
+C:\Users\work\source\repos\DianApp\Dian.Data\bin\Debug\net6.0\Dian02.Entities.pdb
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.csproj.AssemblyReference.cache
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.AssemblyInfoInputs.cache
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.AssemblyInfo.cs
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.csproj.CoreCompileInputs.cache
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.csproj.CopyComplete
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.dll
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\refint\Dian01.Data.dll
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.pdb
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.genruntimeconfig.cache
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\ref\Dian01.Data.dll

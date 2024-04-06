@@ -1,0 +1,11 @@
+C:\Users\work\source\repos\DianApp\Dian.Entities\bin\Debug\net6.0\Dian02.Entities.deps.json
+C:\Users\work\source\repos\DianApp\Dian.Entities\bin\Debug\net6.0\Dian02.Entities.dll
+C:\Users\work\source\repos\DianApp\Dian.Entities\bin\Debug\net6.0\Dian02.Entities.pdb
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.AssemblyInfoInputs.cache
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.AssemblyInfo.cs
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.csproj.CoreCompileInputs.cache
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.dll
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\refint\Dian02.Entities.dll
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.pdb
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\ref\Dian02.Entities.dll

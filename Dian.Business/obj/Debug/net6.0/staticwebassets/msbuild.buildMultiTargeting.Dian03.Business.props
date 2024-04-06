@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dian03.Business.props" />
+</Project>
