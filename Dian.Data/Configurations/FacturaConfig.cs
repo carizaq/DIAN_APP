@@ -15,11 +15,13 @@ namespace Dian01.Data.Configurations
         {
             public void Configure(EntityTypeBuilder<Factura> builder)
             {
+                builder.Property(p => p.IdFactura).HasColumnName("IDE_FACTURA");
                 builder.Property(p => p.Fecha).HasColumnName("FEC_FACTURA").IsRequired(true).HasColumnType("date");
                 builder.Property(p => p.IdCliente).HasColumnName("IDE_CLIENTE").IsRequired(true);
                 builder.Property(p => p.Valor).HasColumnName("VAL_FACTURA").IsRequired(true).HasPrecision(precision:15,scale:0); 
-                builder.Property(p => p.CodigoTipoPago).HasColumnName("COD_TIPO_PAGO").IsRequired(true);
-                builder.Property(p => p.IdTipoTarjeta).HasColumnName("IDE_TIPO_TARJETA").IsRequired(true).HasMaxLength(2);
+                builder.Property(p => p.CodigoTipoPago).HasColumnName("COD_TIPO_PAGO").IsRequired(true).HasPrecision(2);
+                builder.Property(p => p.IdTipoTarjeta).HasColumnName("IDE_TIPO_TARJETA").HasMaxLength(2);
+                builder.Property(p => p.IdProveedor).HasColumnName("IDE_PROVEEDOR").IsRequired(true);
 
             }
         }

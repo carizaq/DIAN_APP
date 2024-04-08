@@ -20,6 +20,7 @@ namespace Dian02.Entities.Entities
         public int IdProducto { get; set; }
 
         [Column("NUM_UNIDADES")]
+        [MaxLength(5)]
         [Required]
         public int Unidades { get; set; }
 

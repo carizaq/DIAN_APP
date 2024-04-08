@@ -23,7 +23,6 @@ C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\staticwebasset
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\scopedcss\bundle\Dian03.Business.styles.css
-C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.Business.csproj.CopyComplete
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.Business.dll
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\refint\Dian03.Business.dll
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.Business.pdb
@@ -90,3 +89,6 @@ C:\Users\work\source\repos\DianApp\Dian.Business\bin\Debug\net6.0\Dian02.Entitie
 C:\Users\work\source\repos\DianApp\Dian.Business\bin\Debug\net6.0\Dian01.Data.pdb
 C:\Users\work\source\repos\DianApp\Dian.Business\bin\Debug\net6.0\Dian02.Entities.pdb
 C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.Business.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.Business.sourcelink.json
+C:\Users\work\source\repos\DianApp\Dian.Business\obj\Debug\net6.0\Dian03.B.DC0C4829.Up2Date
+C:\Users\work\source\repos\DianApp\Dian.Business\bin\Debug\net6.0\AutoMapper.dll

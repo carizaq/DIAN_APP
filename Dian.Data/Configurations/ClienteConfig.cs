@@ -13,13 +13,13 @@ namespace Dian01.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Cliente> builder)
         {
+            builder.Property(p => p.IdCliente).HasColumnName("IDE_CLIENTE");
             builder.Property(p=>p.NombreCliente).HasColumnName("NOM_CLIENTE").HasMaxLength(300).IsRequired(true);
-            builder.Property(p=>p.Telefono).HasColumnName("NUM_TELEFONO").IsRequired(true);
+            builder.Property(p=>p.Telefono).HasColumnName("NUM_TELEFONO").IsRequired(true).HasPrecision(16);
             builder.Property(p=>p.Direccion).HasColumnName("NOM_DIRECCION").HasMaxLength(20).IsRequired(true); 
-            builder.Property(p=>p.FechaIngreso).HasColumnName("FEC_INGRESO").IsRequired(true);
-            builder.Property(p=>p.Estrato).HasColumnName("COD_ESTRATO").IsRequired(true).HasMaxLength(2);            
+            builder.Property(p=>p.FechaIngreso).HasColumnName("FEC_INGRESO").IsRequired(true).HasColumnType("date");
+            builder.Property(p=>p.Estrato).HasColumnName("COD_ESTRATO").IsRequired(true).HasPrecision(2);
             
-
         }
     }
 }

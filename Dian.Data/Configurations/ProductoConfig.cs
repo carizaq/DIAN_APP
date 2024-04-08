@@ -15,10 +15,11 @@ namespace Dian01.Data.Configurations
         {
             public void Configure(EntityTypeBuilder<Producto> builder)
             {
+                builder.Property(p => p.IDProducto).HasColumnName("IDE_PRODUCTO");
                 builder.Property(p => p.Nombre).HasColumnName("NOM_PRODUCTO").IsRequired(true).HasMaxLength(20);
-                builder.Property(p => p.ValorUnidad).HasColumnName("VAL_UNITARIO").IsRequired(true).HasPrecision(precision: 15, scale: 0); ;
-                builder.Property(p => p.UnidadesDisponibles).HasColumnName("NUM_UNIDADES_DISPONIBLES").IsRequired(true);
-                builder.Property(p => p.FechaIngreso).HasColumnName("FEC_INGRESO").IsRequired(true);
+                builder.Property(p => p.ValorUnidad).HasColumnName("VAL_UNITARIO").IsRequired(true).HasPrecision(precision: 10, scale: 0); ;
+                builder.Property(p => p.UnidadesDisponibles).HasColumnName("NUM_UNIDADES_DISPONIBLES").IsRequired(true).HasPrecision(10);
+                builder.Property(p => p.FechaIngreso).HasColumnName("FEC_INGRESO").IsRequired(true).HasColumnType("date");
 
             }
         }

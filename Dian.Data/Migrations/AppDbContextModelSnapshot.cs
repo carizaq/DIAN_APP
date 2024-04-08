@@ -26,7 +26,8 @@ namespace Dian01.Data.Migrations
                 {
                     b.Property<int>("IdCliente")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("IDE_CLIENTE");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCliente"));
 
@@ -37,12 +38,12 @@ namespace Dian01.Data.Migrations
                         .HasColumnName("NOM_DIRECCION");
 
                     b.Property<short>("Estrato")
-                        .HasMaxLength(2)
+                        .HasPrecision(2)
                         .HasColumnType("smallint")
                         .HasColumnName("COD_ESTRATO");
 
                     b.Property<DateTime>("FechaIngreso")
-                        .HasColumnType("datetime2")
+                        .HasColumnType("date")
                         .HasColumnName("FEC_INGRESO");
 
                     b.Property<string>("NombreCliente")
@@ -52,6 +53,7 @@ namespace Dian01.Data.Migrations
                         .HasColumnName("NOM_CLIENTE");
 
                     b.Property<long>("Telefono")
+                        .HasPrecision(16)
                         .HasColumnType("bigint")
                         .HasColumnName("NUM_TELEFONO");
 
@@ -75,6 +77,7 @@ namespace Dian01.Data.Migrations
                         .HasColumnName("VAL_SUBTOTAL");
 
                     b.Property<int>("Unidades")
+                        .HasMaxLength(5)
                         .HasColumnType("int")
                         .HasColumnName("NUM_UNIDADES");
 
@@ -87,11 +90,13 @@ namespace Dian01.Data.Migrations
                 {
                     b.Property<int>("IdFactura")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("IDE_FACTURA");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFactura"));
 
                     b.Property<int>("CodigoTipoPago")
+                        .HasPrecision(2)
                         .HasColumnType("int")
                         .HasColumnName("COD_TIPO_PAGO");
 
@@ -102,6 +107,10 @@ namespace Dian01.Data.Migrations
                     b.Property<int>("IdCliente")
                         .HasColumnType("int")
                         .HasColumnName("IDE_CLIENTE");
+
+                    b.Property<int>("IdProveedor")
+                        .HasColumnType("int")
+                        .HasColumnName("IDE_PROVEEDOR");
 
                     b.Property<short>("IdTipoTarjeta")
                         .HasMaxLength(2)
@@ -117,6 +126,8 @@ namespace Dian01.Data.Migrations
 
                     b.HasIndex("IdCliente");
 
+                    b.HasIndex("IdProveedor");
+
                     b.HasIndex("IdTipoTarjeta");
 
                     b.ToTable("TL_FACTURAS");
@@ -126,12 +137,13 @@ namespace Dian01.Data.Migrations
                 {
                     b.Property<int>("IDProducto")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("IDE_PRODUCTO");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDProducto"));
 
                     b.Property<DateTime>("FechaIngreso")
-                        .HasColumnType("datetime2")
+                        .HasColumnType("date")
                         .HasColumnName("FEC_INGRESO");
 
                     b.Property<string>("Nombre")
@@ -141,17 +153,50 @@ namespace Dian01.Data.Migrations
                         .HasColumnName("NOM_PRODUCTO");
 
                     b.Property<int>("UnidadesDisponibles")
+                        .HasPrecision(10)
                         .HasColumnType("int")
                         .HasColumnName("NUM_UNIDADES_DISPONIBLES");
 
                     b.Property<decimal>("ValorUnidad")
-                        .HasPrecision(15)
-                        .HasColumnType("decimal(15,0)")
+                        .HasPrecision(10)
+                        .HasColumnType("decimal(10,0)")
                         .HasColumnName("VAL_UNITARIO");
 
                     b.HasKey("IDProducto");
 
                     b.ToTable("TL_PRODUCTOS");
+                });
+
+            modelBuilder.Entity("Dian02.Entities.Entities.Proveedor", b =>
+                {
+                    b.Property<int>("IdProveedor")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("IDE_PROVEEDOR");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProveedor"));
+
+                    b.Property<string>("NombreProveedor")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)")
+                        .HasColumnName("NOM_NOMBRE_PROVEEDOR");
+
+                    b.Property<string>("NumeroIdentificacion")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)")
+                        .HasColumnName("NUM_IDENTIFICACION");
+
+                    b.Property<string>("TipoIdentificacion")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)")
+                        .HasColumnName("COD_TIPO_IDENTIFICACION");
+
+                    b.HasKey("IdProveedor");
+
+                    b.ToTable("TL_PROVEEDORES");
                 });
 
             modelBuilder.Entity("Dian02.Entities.Entities.TipoTarjetaCredito", b =>
@@ -204,6 +249,13 @@ namespace Dian01.Data.Migrations
                         .IsRequired()
                         .HasConstraintName("FACT_CLIE_FK");
 
+                    b.HasOne("Dian02.Entities.Entities.Proveedor", "Proveedor")
+                        .WithMany("Facturas")
+                        .HasForeignKey("IdProveedor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FACT_PROV_FK");
+
                     b.HasOne("Dian02.Entities.Entities.TipoTarjetaCredito", "TipoTarjetaCredito")
                         .WithMany("Facturas")
                         .HasForeignKey("IdTipoTarjeta")
@@ -212,6 +264,8 @@ namespace Dian01.Data.Migrations
                         .HasConstraintName("FACT_TITC_FK");
 
                     b.Navigation("Cliente");
+
+                    b.Navigation("Proveedor");
 
                     b.Navigation("TipoTarjetaCredito");
                 });
@@ -229,6 +283,11 @@ namespace Dian01.Data.Migrations
             modelBuilder.Entity("Dian02.Entities.Entities.Producto", b =>
                 {
                     b.Navigation("DetallesFacturas");
+                });
+
+            modelBuilder.Entity("Dian02.Entities.Entities.Proveedor", b =>
+                {
+                    b.Navigation("Facturas");
                 });
 
             modelBuilder.Entity("Dian02.Entities.Entities.TipoTarjetaCredito", b =>

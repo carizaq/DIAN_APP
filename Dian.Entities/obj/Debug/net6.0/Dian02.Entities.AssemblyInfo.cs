@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dian02.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf0949f0e10ed507cf5ffa4ba773d1982e94cce")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dian02.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dian02.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

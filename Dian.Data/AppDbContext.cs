@@ -54,6 +54,13 @@ namespace Dian01.Data
                 .WithOne(p => p.Producto)
                 .HasForeignKey(p => p.IdFactura)
                 .HasConstraintName("DEFA_PROD_FK");
+
+            //Relación factura - proveedor
+            modelBuilder.Entity<Proveedor>()
+               .HasMany<Factura>(f => f.Facturas)
+               .WithOne(c => c.Proveedor)
+               .HasForeignKey(c => c.IdProveedor)
+               .HasConstraintName("FACT_PROV_FK");
         }
 
         public DbSet<Cliente> Clientes { get; set; }
@@ -61,5 +68,6 @@ namespace Dian01.Data
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<TipoTarjetaCredito> TipoTarjetaCredito{ get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
     }
 }

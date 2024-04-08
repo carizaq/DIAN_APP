@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C8voKk+STZNZrHalChgp9y9zn31ut1ougTeWxGQ/wVmzV9qVpPDJndLus3vxsTLrHqQgn6VTRJ8FY2N0IyZctw==",
+  "dgSpecHash": "NoeY4GVV3aNyUaZ2q1TX3AE8xvjoS3GrrWZHu8rLRpYP4MZGbMGIUSjnCMjJvNYy13vLfeilRo5L8rytiOknpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Dian03.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\work\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\work\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\work\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\work\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

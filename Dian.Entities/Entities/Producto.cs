@@ -12,9 +12,9 @@ namespace Dian02.Entities.Entities
     [Table("TL_PRODUCTOS")]
     public class Producto
     {
-        [Key]
-        public int IDProducto { get; set; }
-        public string Nombre { get; set; }
+        [Key]        
+        public int IDProducto { get; set; }        
+        public string Nombre { get; set; }        
         public decimal ValorUnidad { get; set; }
         public int UnidadesDisponibles{ get; set; }
         public DateTime FechaIngreso { get; set; }

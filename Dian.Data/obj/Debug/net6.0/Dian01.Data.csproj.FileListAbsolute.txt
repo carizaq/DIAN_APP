@@ -9,9 +9,10 @@ C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.Genera
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.AssemblyInfoInputs.cache
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.AssemblyInfo.cs
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.csproj.CoreCompileInputs.cache
-C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.csproj.CopyComplete
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.dll
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\refint\Dian01.Data.dll
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.pdb
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.genruntimeconfig.cache
 C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\ref\Dian01.Data.dll
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.Data.sourcelink.json
+C:\Users\work\source\repos\DianApp\Dian.Data\obj\Debug\net6.0\Dian01.D.6DEFCB12.Up2Date

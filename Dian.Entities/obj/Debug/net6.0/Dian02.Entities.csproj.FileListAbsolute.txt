@@ -9,3 +9,4 @@ C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entitie
 C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\refint\Dian02.Entities.dll
 C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.pdb
 C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\ref\Dian02.Entities.dll
+C:\Users\work\source\repos\DianApp\Dian.Entities\obj\Debug\net6.0\Dian02.Entities.sourcelink.json
