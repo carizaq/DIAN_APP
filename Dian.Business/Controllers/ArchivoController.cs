@@ -6,7 +6,7 @@ namespace Dian03.Business.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ArchivoController : Controller
+    public class ArchivoController : ControllerBase
     {
         private readonly IArchivoRepository _archivoRepository;
 
@@ -15,8 +15,8 @@ namespace Dian03.Business.Controllers
             this._archivoRepository = archivoRepository;
         }
 
-        [HttpGet]
-        [Route("ObtenerPagos/")]
+        [HttpPost]
+        [Route("CargarRegistros/")]
         public async Task<bool> CargarRegistrosArchivo(IFormFile pFile)
         {
             return await _archivoRepository.CargarRegistrosArchivo(pFile);

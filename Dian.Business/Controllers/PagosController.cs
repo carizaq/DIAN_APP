@@ -6,7 +6,7 @@ namespace Dian03.Business.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PagosController:Controller
+    public class PagosController:ControllerBase
     {
         private readonly IPagosRepository<PagoDTO> _pagosRepository;
 
@@ -17,9 +17,9 @@ namespace Dian03.Business.Controllers
 
         [HttpGet]
         [Route("ObtenerPagos/")]
-        public async Task<IEnumerable<PagoDTO>> ObtenerTodosPagos()
+        public async Task<IEnumerable<PagoDTO>> ObtenerTodosPagos(short pAnioPagos)
         {
-            return await _pagosRepository.ObtenerTodosPagos();
+            return await _pagosRepository.ObtenerTodosPagos(pAnioPagos);
         }
 
         [HttpPost]

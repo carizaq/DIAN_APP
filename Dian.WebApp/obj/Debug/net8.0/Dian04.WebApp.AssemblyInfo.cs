@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dian04.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf0949f0e10ed507cf5ffa4ba773d1982e94cce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae021ba17b602eca6a6c640f7ca8504f8df6256c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dian04.WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dian04.WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

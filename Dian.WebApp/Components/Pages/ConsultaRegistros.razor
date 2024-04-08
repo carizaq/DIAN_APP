@@ -1,21 +1,60 @@
 ﻿@page "/consultarPagos"
+@using Dian04.WebApp.Models.DTO
 @using Radzen.Blazor
 @inject IWebHostEnvironment Environment
+@inject HttpClient Http;
 @rendermode InteractiveServer
 
 
 <PageTitle>Consultar Pagos</PageTitle>
 
 <h1>Consultar Pagos Realizados</h1>
-<hr/>
-<p>se </p>
+<hr />
+<p>Obtener los registros de pagos por año almacenados en el sistema: </p>
+
+<div class="row">
+    <div class="col-md-6">
+        <b>Año Consulta:</b>
+        <RadzenDropDown AllowClear="true" AllowFiltering="true"
+                        @bind-Value=@anioSeleccionado Placeholder="Select..." Data=@listaAnios />
+    </div>
+    <div class="col-md-6">
+        <RadzenButton Click="@OnConsultarPagos" Text="Consultar" Style="background-color: greenyellow !important;" />
+        @* <RadzenButton Text="Generar Informe Final de Distribución" Visible="@habilitarConsultaReporte" Click=@(args => VerReporteDistribucionFinal("Informe final de distribución de las necesidades de inversión")) Style="background-color: #1b6ec2 !important;" /> *@
+    </div>
+   
+</div>
+<div class="col-md-12 align-left">
+    <RadzenDataGrid Data="@listaPagos" TItem="Pago" AllowPaging="true" PageSize="10" AllowFiltering="true" AllowSorting="true" AllowMultiColumnSorting="true">
+        <Columns>
+            <RadzenDataGridColumn TItem="Pago" Property="IdProveedor" Title="Proveedor ID" />
+            <RadzenDataGridColumn TItem="Pago" Property="NombreProveedor" Title="Nombre Proveedor" />
+            <RadzenDataGridColumn TItem="Pago" Property="TipoIdentificacion" Title="Tipo Identificacion" />
+            <RadzenDataGridColumn TItem="Pago" Property="NumeroIdentificacion" Title="Número Identificacion" />
+        </Columns>
+    </RadzenDataGrid>
+</div>
 
 <div class="col-md-12 align-left pb-2 pr-0">
-   
 </div>
 
 @code {
+    int anioSeleccionado = DateTime.Today.Year;
+    IEnumerable<int> listaAnios;
+    IEnumerable<Pago> listaPagos;
 
-    //respuesta = await Http.GetFromJsonAsync<>($"ProcesoPresupuestal/ConsultarDependencias");
-   
+    protected override void OnInitialized()
+    {
+        listaAnios = Enumerable.Range(2010, DateTime.Now.Year - 2010 + 1).ToList();
+        listaPagos = new List<Pago>();
+    }
+
+    async Task OnConsultarPagos()
+    {
+        listaPagos = await Http.GetFromJsonAsync<IEnumerable<Pago>>($"Pagos/ObtenerPagos?pAnioPagos={anioSeleccionado}");
+        
+    }
+
+
+
 }

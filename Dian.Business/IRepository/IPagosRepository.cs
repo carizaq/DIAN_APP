@@ -2,8 +2,21 @@
 {
     public interface IPagosRepository<T> where T:class
     {
-        Task<IEnumerable<T>> ObtenerTodosPagos();
+        /// <summary>
+        /// Obtener los pagos por año
+        /// </summary>
+        /// <param name="pAnioPagos"></param>
+        /// <returns></returns>
+        Task<IEnumerable<T>> ObtenerTodosPagos(int pAnioPagos);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         Task<T> AlmacenarPagos();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         Task AlmacenarCambios();
     }
 }
