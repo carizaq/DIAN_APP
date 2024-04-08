@@ -20,11 +20,11 @@
     </div>
     <div class="col-md-6">
         <RadzenButton Click="@OnConsultarPagos" Text="Consultar" Style="background-color: greenyellow !important;" />
-        @* <RadzenButton Text="Generar Informe Final de Distribución" Visible="@habilitarConsultaReporte" Click=@(args => VerReporteDistribucionFinal("Informe final de distribución de las necesidades de inversión")) Style="background-color: #1b6ec2 !important;" /> *@
-    </div>
-   
+        @* <RadzenButton Text="Generar Informe" Click=@(args => VerReporte("Informe")) Style="background-color: #1b6ec2 !important;" /> *@
+    </div>   
 </div>
-<div class="col-md-12 align-left">
+
+<div class="col-md-12">
     <RadzenDataGrid Data="@listaPagos" TItem="Pago" AllowPaging="true" PageSize="10" AllowFiltering="true" AllowSorting="true" AllowMultiColumnSorting="true">
         <Columns>
             <RadzenDataGridColumn TItem="Pago" Property="IdProveedor" Title="Proveedor ID" />
@@ -35,8 +35,6 @@
     </RadzenDataGrid>
 </div>
 
-<div class="col-md-12 align-left pb-2 pr-0">
-</div>
 
 @code {
     int anioSeleccionado = DateTime.Today.Year;

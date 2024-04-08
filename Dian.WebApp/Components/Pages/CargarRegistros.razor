@@ -3,13 +3,14 @@
 @using Radzen.Blazor
 @inject IWebHostEnvironment Environment
 @inject HttpClient Http;
+@inject NotificationService notificationService
 @rendermode InteractiveServer
 
 
 
 <PageTitle>Consultar Pagos</PageTitle>
 
-<h1>Consultar Pagos Realizados</h1>
+<h1>Proceso Carga de Registros</h1>
 <hr />
 <p>Por favor, seleccione el archivo con los registros de pagos a incluir en el sistema </p>
 
@@ -20,16 +21,18 @@
 </div>
 <div class="col-md-6 align-left">
     <h3>Proceso Carga</h3>
-    <RadzenCard Style="overflow:auto; height:500px">
+    <RadzenCard Style="overflow:auto; height:100px">
         <RadzenProgressBar Value="@progresoCarga" Unit="@info" Style="margin-bottom: 20px;" Visible=@(progresoCarga>=0) />
     </RadzenCard>
 </div>
-@code {
 
+@code {
+    bool esVisibleAlert = false;
     //InputFileChangeEventArgs ArgumentosCargue;
     int progresoCarga;
     string info = "";
     string ArchivoActual = "";
+    string mensajeAlerta = string.Empty;
 
     /// <summary>
     /// Método para procesar archivo
@@ -49,10 +52,25 @@
     //     // Aquí puedes procesar el contenido del archivo como desees
     // }
 
-    void OnProgresoCarga(UploadProgressArgs args, string name)
+    async Task OnProgresoCarga(UploadProgressArgs args, string name)
     {
         this.info = $"%'{name}'/{args.Loaded} of {args.Total} bytes.";
+        if (args.Total > 50000000)
+        {   
+            //Display the notification
+            notificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Warning,
+                    Detail = "El archivo es mayor a 50 Mb, no es posible procesarlo",                    
+                    Duration=40000
+                    
+                });            
+            return;
+        }
+
         this.progresoCarga = args.Progress;
-        
+        var salida = await Http.PostAsJsonAsync($"Archivo/CargarArchivo",args.Files.FirstOrDefault());
+        var responseBody = await salida.Content.ReadAsStringAsync();
+
     }
 }

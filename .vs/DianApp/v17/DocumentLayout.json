@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\work\\source\\repos\\DianApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\repository\\pagosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\repository\\pagosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.webapp\\components\\pages\\cargarregistros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|solutionrelative:dian.webapp\\components\\pages\\cargarregistros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|solutionrelative:dian.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|solutionrelative:dian.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.webapp\\components\\pages\\consultaregistros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|solutionrelative:dian.webapp\\components\\pages\\plantillas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2688BD17-D5A8-43EC-B25E-F6819A037B29}|Dian.WebApp\\Dian04.WebApp.csproj|solutionrelative:dian.webapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1F52BE02-85C3-43D0-A00B-2F0CB43FDDC9}|Dian.Data\\Dian01.Data.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.data\\dian01.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F52BE02-85C3-43D0-A00B-2F0CB43FDDC9}|Dian.Data\\Dian01.Data.csproj|solutionrelative:dian.data\\dian01.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\controllers\\archivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|c:\\users\\work\\source\\repos\\dianapp\\dian.business\\repository\\pagosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{306E7A73-E5C6-48AF-80E7-E1876E666CD4}|Dian.Business\\Dian03.Business.csproj|solutionrelative:dian.business\\repository\\pagosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,13 +74,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Dian.WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Program.cs",
+              "RelativeToolTip": "Dian.WebApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T10:50:31.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dian01.Data",
+              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Data\\Dian01.Data.csproj",
+              "RelativeDocumentMoniker": "Dian.Data\\Dian01.Data.csproj",
+              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Data\\Dian01.Data.csproj",
+              "RelativeToolTip": "Dian.Data\\Dian01.Data.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-08T09:34:46.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagosController.cs",
+              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\PagosController.cs",
+              "RelativeDocumentMoniker": "Dian.Business\\Controllers\\PagosController.cs",
+              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\PagosController.cs",
+              "RelativeToolTip": "Dian.Business\\Controllers\\PagosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:25:25.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsultaRegistros.razor",
+              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
+              "RelativeDocumentMoniker": "Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
+              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
+              "RelativeToolTip": "Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T08:14:40.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PagosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Repository\\PagosRepository.cs",
+              "RelativeDocumentMoniker": "Dian.Business\\Repository\\PagosRepository.cs",
+              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Repository\\PagosRepository.cs",
+              "RelativeToolTip": "Dian.Business\\Repository\\PagosRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvy0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T07:53:35.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CargarRegistros.razor",
               "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\CargarRegistros.razor",
               "RelativeDocumentMoniker": "Dian.WebApp\\Components\\Pages\\CargarRegistros.razor",
               "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\CargarRegistros.razor",
               "RelativeToolTip": "Dian.WebApp\\Components\\Pages\\CargarRegistros.razor",
-              "ViewState": "AQIAAB4AAAAAAAAAAADwvzUAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-08T08:26:28.34Z",
               "EditorCaption": ""
@@ -80,79 +153,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PagosController.cs",
-              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\PagosController.cs",
-              "RelativeDocumentMoniker": "Dian.Business\\Controllers\\PagosController.cs",
-              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\PagosController.cs",
-              "RelativeToolTip": "Dian.Business\\Controllers\\PagosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:25:25.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConsultaRegistros.razor",
-              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
-              "RelativeDocumentMoniker": "Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
-              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
-              "RelativeToolTip": "Dian.WebApp\\Components\\Pages\\ConsultaRegistros.razor",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T08:14:40.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Plantillas.razor",
               "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\Plantillas.razor",
               "RelativeDocumentMoniker": "Dian.WebApp\\Components\\Pages\\Plantillas.razor",
               "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Pages\\Plantillas.razor",
               "RelativeToolTip": "Dian.WebApp\\Components\\Pages\\Plantillas.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-08T08:13:38.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Dian.WebApp\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.WebApp\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "Dian.WebApp\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-08T08:09:52.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ArchivoController.cs",
               "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\ArchivoController.cs",
               "RelativeDocumentMoniker": "Dian.Business\\Controllers\\ArchivoController.cs",
               "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Controllers\\ArchivoController.cs",
               "RelativeToolTip": "Dian.Business\\Controllers\\ArchivoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T08:03:29.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PagosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Repository\\PagosRepository.cs",
-              "RelativeDocumentMoniker": "Dian.Business\\Repository\\PagosRepository.cs",
-              "ToolTip": "C:\\Users\\work\\source\\repos\\DianApp\\Dian.Business\\Repository\\PagosRepository.cs",
-              "RelativeToolTip": "Dian.Business\\Repository\\PagosRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwC0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T07:53:35.995Z",
               "EditorCaption": ""
             }
           ]

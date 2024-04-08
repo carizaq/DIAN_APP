@@ -16,7 +16,7 @@ namespace Dian03.Business.Controllers
         }
 
         [HttpPost]
-        [Route("CargarRegistros/")]
+        [Route("CargarArchivo/")]
         public async Task<bool> CargarRegistrosArchivo(IFormFile pFile)
         {
             return await _archivoRepository.CargarRegistrosArchivo(pFile);

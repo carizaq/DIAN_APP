@@ -1,4 +1,5 @@
 using Dian04.WebApp.Components;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddRazorComponents()
 // Llamado a WEBAPI
 var restApiAddress = builder.Configuration.GetValue<string>("WEBAPIURL");
 
+builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped(sp => new HttpClient
 {
     BaseAddress = new Uri(restApiAddress)

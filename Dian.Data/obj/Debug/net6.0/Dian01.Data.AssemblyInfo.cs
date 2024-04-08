@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dian01.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae021ba17b602eca6a6c640f7ca8504f8df6256c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+825a7de3a3dd9f7b22a290872640981eca002ab1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dian01.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dian01.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
