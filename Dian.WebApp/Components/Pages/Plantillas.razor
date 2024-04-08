@@ -1,0 +1,41 @@
+﻿@page "/plantillas"
+@using Radzen.Blazor
+@inject IJSRuntime JS
+@inject IWebHostEnvironment Environment
+@rendermode InteractiveServer
+
+
+<PageTitle>Plantillas Disponibles</PageTitle>
+
+<h1>Plantillas Disponibles</h1>
+<hr/>
+<p>A continuación se presentan los dos tipos de plantillas disponibles para utilizar en la carga de registros, cada plantilla viene con un ejemplo</p>
+
+<div class="col-md-12 align-left pb-2 pr-0">
+    <RadzenButton Click="@((args) => OnDescargarArchivo("JSON"))" Text="Plantilla JSON" Style="background-color: chartreuse !important; " />
+    <RadzenButton Click="@((args) => OnDescargarArchivo("XML"))" Text="Plantilla XML" Style="background-color: chartreuse !important; " />
+</div>
+
+@code {
+
+    /// <summary>
+    /// Descarca el archivo con la estructura JSON o XML
+    /// </summary>
+    /// <param name="pTipoarchivo"></param>
+    /// <returns></returns>
+    async Task OnDescargarArchivo(string pTipoarchivo)
+    {
+        string rutaArchivo = Path.Combine(Environment.WebRootPath, "Plantillas", "Plantilla.json");
+        var nombreArchivo = "plantilla.JSON";
+
+        if (pTipoarchivo != "JSON")
+        {
+            rutaArchivo = Path.Combine(Environment.WebRootPath, "Plantillas", "Plantilla.xml");
+            nombreArchivo = "plantilla.xml";
+        }
+        //proceso para descargar archivo de tipo seleccionado, proceso javascript en el mainlayout
+        var fileStream = File.OpenRead(rutaArchivo);
+        using var streamReference = new DotNetStreamReference(stream: fileStream);
+        await JS.InvokeVoidAsync("downloadFileFromStream", nombreArchivo, streamReference);
+    }
+}

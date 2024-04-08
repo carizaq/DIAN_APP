@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dianregistro>
+	<itempago>
+		<idpago></idpago>
+		<fechapago></fechapago>
+		<nombre></nombre>
+		<tipoidentificacion></tipoidentificacion>
+		<numeroidentificacion></numeroidentificacion>
+		<monto> </monto>
+	</itempago>
+</dianregistro>
+

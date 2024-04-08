@@ -1,0 +1,58 @@
+﻿@page "/cargarPagos"
+@using Radzen
+@using Radzen.Blazor
+@inject IWebHostEnvironment Environment
+@inject HttpClient Http;
+@rendermode InteractiveServer
+
+
+
+<PageTitle>Consultar Pagos</PageTitle>
+
+<h1>Consultar Pagos Realizados</h1>
+<hr />
+<p>Por favor, seleccione el archivo con los registros de pagos a incluir en el sistema </p>
+
+<div class="row">
+    <div class="col-md-6 align-left">
+        <RadzenUpload Url="upload/single" Style="margin-bottom:20px;" Accept=".xml,.json" Progress="@((args) => @OnProgresoCarga(args,"Archivo"))"></RadzenUpload>
+    </div>
+</div>
+<div class="col-md-6 align-left">
+    <h3>Proceso Carga</h3>
+    <RadzenCard Style="overflow:auto; height:500px">
+        <RadzenProgressBar Value="@progresoCarga" Unit="@info" Style="margin-bottom: 20px;" Visible=@(progresoCarga>=0) />
+    </RadzenCard>
+</div>
+@code {
+
+    //InputFileChangeEventArgs ArgumentosCargue;
+    int progresoCarga;
+    string info = "";
+    string ArchivoActual = "";
+
+    /// <summary>
+    /// Método para procesar archivo
+    /// </summary>
+    /// <param name="args"></param>
+    /// <returns></returns>
+    // void CargaArchivos(InputFileChangeEventArgs args)
+    // {
+    //     ArgumentosCargue = args;
+    //     NoPuedeCargar2 = false;
+    //     ArchivoActual = ArgumentosCargue.File.Name;
+    // }
+
+    // void OnFileInputChange(FileInputEventArgs args)
+    // {
+    //     fileContent = args.FileContentAsBase64;
+    //     // Aquí puedes procesar el contenido del archivo como desees
+    // }
+
+    void OnProgresoCarga(UploadProgressArgs args, string name)
+    {
+        this.info = $"%'{name}'/{args.Loaded} of {args.Total} bytes.";
+        this.progresoCarga = args.Progress;
+        
+    }
+}

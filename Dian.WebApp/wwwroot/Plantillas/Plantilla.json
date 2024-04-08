@@ -1,0 +1,10 @@
+[
+	{		
+		"IdPago": "Cliente 20",
+		"FechaPago": "01/01/2020",
+		"Nombre": "Cliente 20",
+		"TipoIdentificacion": "CC",
+		"NumeroIdentificacion": 123456789,
+		"Monto": 101220
+	}
+]
